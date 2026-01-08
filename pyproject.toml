@@ -1,0 +1,19 @@
+[tool.flet]
+# Flet build configuration
+
+[tool.flet.android]
+# Explicitly include packages that might not be auto-detected
+packages = [
+    "cryptography",
+    "cryptography.fernet",
+    "cryptography.hazmat",
+    "cryptography.hazmat.primitives",
+    "cryptography.hazmat.backends",
+]
+
+# Additional permissions if needed
+permissions = [
+    "android.permission.INTERNET",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.READ_EXTERNAL_STORAGE",
+]
