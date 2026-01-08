@@ -35,8 +35,6 @@ jobs:
         channel: 'stable'
 
     - name: Build APK
-      run: |
-        ls -R
         yes | flutter doctor --android-licenses || true
         flet build apk --template ./flet_custom_build --verbose
         # No rename needed, upload what is generated
